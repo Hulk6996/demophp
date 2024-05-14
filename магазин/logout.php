@@ -1,11 +1,9 @@
 <?php
-session_start(); // Начинаем сессию
+session_start();
 
-// Уничтожаем все данные сессии.
-session_unset(); // Удалить все переменные сессии
-session_destroy(); // Уничтожить саму сессию
+session_unset();
+session_destroy();
 
-// Перенаправляем пользователя на страницу входа
-header("Location: index.html");
+header("Location: login.php");
 exit();
 ?>
